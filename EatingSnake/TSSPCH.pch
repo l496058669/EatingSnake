@@ -1,0 +1,38 @@
+//
+//  TSSPCH.pch
+//  EatingSnake
+//
+//  Created by 李志彬 on 2017/6/12.
+//  Copyright © 2017年 李志彬. All rights reserved.
+//
+
+#ifndef TSSPCH_pch
+#define TSSPCH_pch
+
+#import "ColorsMacro.h"
+#import "ZBButton.h"
+#import "UIViewController+AotaiViewCtrl.h"
+
+//速度等级在userdefault的key值
+#define KeySL @"SpeedLevelKey"
+
+//当前屏幕尺寸
+#define HHeight [UIScreen mainScreen].bounds.size.height
+#define WWidth [UIScreen mainScreen].bounds.size.width
+
+//字体大小
+#define BasicFont(size) [UIFont systemFontOfSize:(size * (WWidth/375.00))]
+#define BasicBlodFont(size) [UIFont boldSystemFontOfSize:(size * (WWidth/375.00))]
+
+#define kUSDF [NSUserDefaults standardUserDefaults]
+#define kWindow [UIApplication sharedApplication].keyWindow
+
+//多线程
+//1.延迟几秒后操作
+#define kGCDAfter(delay, GCDBlock) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), GCDBlock)
+//2.多线程——返回主线程操作
+#define kGCDMain(GCDBlock) dispatch_async(dispatch_get_main_queue(),GCDBlock)
+//3.多线程——在子线程操作
+#define kGCDAsync(GCDBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0),GCDBlock)
+
+#endif /* TSSPCH_pch */

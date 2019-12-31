@@ -1,0 +1,15 @@
+PODS:
+  - BGFMDB (1.33)
+  - Masonry (1.0.2)
+
+DEPENDENCIES:
+  - BGFMDB (~> 1.33)
+  - Masonry
+
+SPEC CHECKSUMS:
+  BGFMDB: f1d078f2a5f5d6e41d351391acae30eadaaad565
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+
+PODFILE CHECKSUM: 4871d0ee55683ef6a93cac1838b3fce8e466b389
+
+COCOAPODS: 1.2.1

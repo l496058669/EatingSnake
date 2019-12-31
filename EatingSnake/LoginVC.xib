@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGd-6J-lav">
+                    <rect key="frame" x="107.5" y="218.5" width="160" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="Bwl-1L-vhI"/>
+                        <constraint firstAttribute="height" constant="70" id="bKd-7J-FPj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                    <state key="normal" title="开始游戏">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startGame:" destination="-1" eventType="touchUpInside" id="ubV-7S-HiS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVf-vx-G31">
+                    <rect key="frame" x="107.5" y="318.5" width="160" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="PcL-BL-xWQ"/>
+                        <constraint firstAttribute="width" constant="160" id="piK-Wd-GhP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                    <state key="normal" title="选择等级">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="levelChose:" destination="-1" eventType="touchUpInside" id="8no-NH-NFH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NVf-vx-G31" firstAttribute="height" secondItem="fGd-6J-lav" secondAttribute="height" id="4th-3g-ihb"/>
+                <constraint firstItem="fGd-6J-lav" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CNF-d1-Av8"/>
+                <constraint firstItem="NVf-vx-G31" firstAttribute="width" secondItem="fGd-6J-lav" secondAttribute="width" id="EsI-EX-f2V"/>
+                <constraint firstItem="NVf-vx-G31" firstAttribute="top" secondItem="fGd-6J-lav" secondAttribute="bottom" constant="30" id="Zeo-vA-Ayf"/>
+                <constraint firstItem="fGd-6J-lav" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-80" id="dfE-l3-mJJ"/>
+                <constraint firstItem="NVf-vx-G31" firstAttribute="centerX" secondItem="fGd-6J-lav" secondAttribute="centerX" id="dvw-4F-A7x"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>
